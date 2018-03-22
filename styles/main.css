@@ -1,0 +1,122 @@
+/*
+Name: The Deep End blog
+Date: March 2018
+Author: Bronwyn Cotter
+*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+  
+/* Body */
+body {
+    background: white;
+    color: #101435;                      
+    font-weight: 100;
+    font-family: 'Lucida Sans', sans-serif;
+}
+
+.indexpage {
+    text-align: center;
+}
+
+.page1 .page2 {
+    text-align: left;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 100%; 
+    padding: 0 10px;
+}
+
+/* Nav bar */
+.nav {
+    background-color: #04051d;
+    color: white;
+    overflow: hidden;
+}
+
+.nav a {
+    float: left;
+    text-align: center;
+    color: white;
+    padding: 14px 16px;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: #1c314b;
+    cursor: pointer; 
+  }
+
+.nav a.active {
+    background-color: #435d7e
+}
+
+/* Header */
+.header {
+    background: url("../images/deep-end.jpg") no-repeat center top;
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+}
+
+.header .container {
+    position: relative;
+    top: 170px;
+}
+
+.header h1 {
+    color: #fff;
+    line-height: 100px; 
+    font-size: 80px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-transform: uppercase; 
+}
+
+.header h2 {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+    margin-top: 0;
+    text-transform: uppercase; 
+}
+
+.main h3 {
+    font-size: 30px;
+    margin: 50px;
+}
+
+h4 {
+    display: inline-block;
+    margin: 10px 100px;
+    color: #04051d;
+    text-decoration: none;
+}
+
+.blogcontent {
+    margin: 50px 80px;
+}
+
+.blogpics {
+    margin: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #cdd7e4;
+    width: 100%;
+    padding: 8px;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
