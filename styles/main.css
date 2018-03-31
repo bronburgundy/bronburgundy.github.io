@@ -101,18 +101,60 @@ h4 {
     text-decoration: none;
 }
 
-.blogcontent {
-    margin: 50px 80px;
+/* blogs */
+
+.blogmain {
+    margin-top: 0px;
 }
 
-.blogpics {
-    margin: 20px;
+#blogmain-time {
+    background: url(../images/habits.jpg) no-repeat right center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    z-index: 1;
 }
+
+#blogmain-reflections {
+    background: url(../images/tree.jpg) no-repeat right center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    z-index: 1;
+}
+
+h5 {
+    color: white;
+    font-size: 30px;
+    margin: 0px;
+    padding: 50px 50px 0px 50px;
+
+}
+.copy {
+    padding: 20px 50px 50px 50px;
+}
+
+.blogblock {
+    background: #0d2c40 url(icon-half.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 40%;
+    position: relative;
+    color: #ffffff;
+    width: 40%;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 
 /* Footer */
 .footer {
     background-color: #cdd7e4;
-    width: 100%;
+    max-width: 100%;
     padding: 8px;
     font-size: 12px;
     text-align: center;
