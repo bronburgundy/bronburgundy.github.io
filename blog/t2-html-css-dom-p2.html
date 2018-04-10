@@ -1,90 +1,98 @@
 <!DOCTYPE html>
 <html lang=en>
-  <head>
-    <title>HTML, CSS and DOM - Part 2</title>
-    <meta charset="UTF-8">
-    <link href="../styles/main.css" rel="stylesheet" type="text/css">
-  </head>
+<head>
+  <title>HTML, CSS and DOM - Part 2</title>
+  <meta charset="UTF-8">
+  <link href="../styles/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="container">
   
-  <body>
-    <div class="container">
-    
-      <div class="nav">
-        <a href="https://bronburgundy.github.io/index.html">Home</a>
-        <a href="https://bronburgundy.github.io/blog/c1-reflection-blog.html">Reflections</a>
-        <a href="https://bronburgundy.github.io/blog/c1-time-and-habits-blog.html">Time and Habits</a>
+  <div class="nav">
+      <div class="navcontent">
+        <a href="https://bronburgundy.github.io/blog/index.html">Home</a>
         <div class="dropdown">
-          <button class="dropbtn">HTML, CSS and DOM</button>
+          <button class="dropbtn">Cultural Blogs</button>
+          <div class="dropdown-content">
+            <a href="https://bronburgundy.github.io/blog/c1-reflection-blog.html">Reflections</a>
+            <a href="https://bronburgundy.github.io/blog/c1-time-and-habits-blog.html">Time and Habits</a>
+            <a href="https://bronburgundy.github.io/blog/c2-emotional-intelligence-blog.html">Emotional Intelligence</a>
+          </div>
+        </div> 
+        <div class="dropdown">
+          <button class="dropbtn">Technical Blogs</button>
           <div class="dropdown-content">
             <a href="https://bronburgundy.github.io/blog/t2-html-css-dom-p1.html">HTML, CSS and DOM - Part 1</a>
             <a class="active" href="https://bronburgundy.github.io/blog/t2-html-css-dom-p2.html">HTML, CSS and DOM - Part 2</a>
           </div>
-        </div>    
-      </div>   
+        </div>  
+      </div> 
+    </div>   
 
-      <div class="blogmain" id="blogmain-HCD2">
-        <div class="blogblock" id="blogblock-HCD2">
-          <h5>HTML, CSS and the DOM - Part 2</h5>
-          <div class="copy">
-            <p>
-              <em>Grid Based Design</em>
-            </p>
-            <p> 
-              Grid based design is a way of laying out a web page using a grid structure, 
-              made up of rows and columns. For responsive design, the most common grid 
-              ayout utilises 12 columns, and a total width of 100%, and will shrink and 
-              expand as you resize the browser window.
-            </p>
-            <img id="grid" src="../images/resp_grid_opt.png" alt="12 Column Grid Layout">
-            <br>
-            <p>
-              <em>Hype about Responsive Pages</em>
-            </p>
-            <p>
-              In this device-oriented world we live in, web pages need to be both 
-              functional and aesthetically pleasing on all sized devies, from mobile phone 
-              screens to tablets to desktops. In fact, developers should be designing 
-              websites using 'mobile-first' design as mobile-phones overtook desktop 
-              computers as the most popular device worldwide for internet usage in 2014, 
-              and this figure continues to climb.
-            </p>
-            <br>
-            <p>
-              <em>Semantic Structure</em>
-            </p>
-            <p>
-              Semantic elements in HTML are those that have meaning, ie. tell us about 
-              the contents of that element. Some common semantc elements are: 
-            </p>  
-            <ul>
-              <li>Headers - <code class="codespan">h1, h2, h3... h6</code></li>
-              <li>Images - <code class="codespan">img</code></li>
-              <li>Paragraphs - <code class="codespan">p</code></li>
-              <li>Forms - <code class="codespan">form</code></li>
-              <li>Tables - <code class="codespan">table</code></li>
-              <li>Articles - <code class="codespan">article</code></li>
-            </ul>
-            <p>
-              Using Semantic Structure in your HTML means using these tags where they 
-              should be, to define the structure of those particular parts of your page.
-            </p>  
-            <br>
-            <p>
-              My take on Frameworks and Responsive layouts is that using these allows a 
-              developer to see the big picture view of their page, and how all the elements 
-              on the page relate to each other. It is a straight-forward, no-mess solution 
-              to laying out a web page and ensuring the page will look great no matter what 
-              device it is viewed from!
-            </p>
-          </div>
+    <div class="blogmain" id="blogmain-HCD2">
+      <div class="blogblock" id="blogblock-HCD2">
+        <h5>HTML, CSS and the DOM - Part 2</h5>
+        <div class="copy">
+          <p>
+            <em>Grid Based Design</em>
+          </p>
+          <p> 
+            Grid based design is a way of laying out a web page using a grid structure, 
+            made up of rows and columns. For responsive design, the most common grid 
+            layout utilises 12 columns, and a total width of 100%, and will shrink and 
+            expand as you resize the browser window.
+          </p>
+          <img id="grid" src="../images/resp_grid_opt.png" alt="12 Column Grid Layout">
+          <br>
+          <p>
+            <em>Hype about Responsive Pages</em>
+          </p>
+          <p>
+            In this device-oriented world we live in, web pages need to be both 
+            functional and aesthetically pleasing on all sized devies, from mobile phone 
+            screens to tablets to desktops. In fact, developers should be designing 
+            websites using 'mobile-first' design as mobile-phones overtook desktop 
+            computers as the most popular device worldwide for internet usage in 2014, 
+            and this figure continues to climb.
+          </p>
+          <br>
+          <p>
+            <em>Semantic Structure</em>
+          </p>
+          <p>
+            Semantic elements in HTML are those that have meaning, ie. tell us about 
+            the contents of that element. Some common semantc elements are: 
+          </p>  
+          <ul>
+            <li>Headers - <code class="codespan">h1, h2, h3... h6</code></li>
+            <li>Images - <code class="codespan">img</code></li>
+            <li>Paragraphs - <code class="codespan">p</code></li>
+            <li>Forms - <code class="codespan">form</code></li>
+            <li>Tables - <code class="codespan">table</code></li>
+            <li>Articles - <code class="codespan">article</code></li>
+          </ul>
+          <p>
+            Using Semantic Structure in your HTML means using these tags where they 
+            should be, to define the structure of those particular parts of your page.
+          </p>  
+          <br>
+          <p>
+            My take on Frameworks and Responsive layouts is that using these allows a 
+            developer to see the big picture view of their page, and how all the elements 
+            on the page relate to each other. It is a straight-forward, no-mess solution 
+            to laying out a web page and ensuring the page will look great no matter what 
+            device it is viewed from!
+          </p>
         </div>
       </div>
-
-      <div class="footer">
-        <p>© Copyright Bronwyn Cotter 2018</p>
-      </div>
-
     </div>
 
-  </body>
+    <div class="footer">
+      <p>© Copyright Bronwyn Cotter 2018</p>
+    </div>
+
+  </div>
+
+</body>
 </html>

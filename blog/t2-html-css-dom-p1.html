@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang=en>
-  <head>
-    <title>HTML, CSS and DOM - Part 1</title>
-    <meta charset="UTF-8">
-    <link href="../styles/main.css" rel="stylesheet" type="text/css">
-  </head>
-  
-  <body>
-    <div class="container">
+<head>
+  <title>HTML, CSS and DOM - Part 1</title>
+  <meta charset="UTF-8">
+  <link href="../styles/main.css" rel="stylesheet" type="text/css">
+</head>
 
-      <div class="nav">
-        <a href="https://bronburgundy.github.io/index.html">Home</a>
-        <a href="https://bronburgundy.github.io/blog/c1-reflection-blog.html">Reflections</a>
-        <a href="https://bronburgundy.github.io/blog/c1-time-and-habits-blog.html">Time and Habits</a>
+<body>
+  <div class="container">
+
+    <div class="nav">
+      <div class="navcontent">
+        <a href="https://bronburgundy.github.io/blog/index.html">Home</a>
         <div class="dropdown">
-          <button class="dropbtn">HTML, CSS and DOM</button>
+          <button class="dropbtn">Cultural Blogs</button>
+          <div class="dropdown-content">
+            <a href="https://bronburgundy.github.io/blog/c1-reflection-blog.html">Reflections</a>
+            <a href="https://bronburgundy.github.io/blog/c1-time-and-habits-blog.html">Time and Habits</a>
+            <a href="https://bronburgundy.github.io/blog/c2-emotional-intelligence-blog.html">Emotional Intelligence</a>
+          </div>
+        </div> 
+        <div class="dropdown">
+          <button class="dropbtn">Technical Blogs</button>
           <div class="dropdown-content">
             <a class="active" href="https://bronburgundy.github.io/blog/t2-html-css-dom-p1.html">HTML, CSS and DOM - Part 1</a>
             <a href="https://bronburgundy.github.io/blog/t2-html-css-dom-p2.html">HTML, CSS and DOM - Part 2</a>
           </div>
-        </div>    
-      </div>   
+        </div>  
+      </div> 
+    </div>   
 
-      <div class="blogmain" id="blogmain-HCD">
-        <div class="blogblock" id="blogblock-HCD">
-          <h5>HTML, CSS and the DOM - Part 1</h5>
-        
-          <div class="copy">
-            <p>
-              <em>Analogy for HTML, CSS and the DOM</em>
-            </p>
-            <p> 
+    <div class="blogmain" id="blogmain-HCD">
+      <div class="blogblock" id="blogblock-HCD">
+        <h5>HTML, CSS and the DOM - Part 1</h5>
+        <div class="copy">
+          <p>
+            <em>Analogy for HTML, CSS and the DOM</em>
+          </p>
+          <p> 
             The best analogy I have heard to describe HTML, CSS and the DOM is based 
             on the concept of a house. HTML (HyperText Markup Language) is the house, 
             it has a structure - rooms, windows, stairs etc. CSS (Cascading Style Sheets) 
@@ -38,54 +45,53 @@
             wallpaper or paint and the lightshades. The DOM (Document Object Model) is 
             the blueprint of this house - a visual representation that can be used to 
             shift walls or add extra features to the house.
-            </p>
-            <br>
-            <p>
-              <em>Boxifying Design</em>
-            </p>
-            <p>
+          </p>
+          <br>
+          <p>
+            <em>Boxifying Design</em>
+          </p>
+          <p>
             This refers to way in which a web page is constructed from a series of 
             different sized boxes. There are main boxes for major sections of a page - 
             the nav menu, the main content and the footer for example, then smaller 
             boxes inside these boxes for things like headings, images and text. There 
             may even be boxes inside these boxes for individual links, captions or lists. 
-            </p>
-            <br>
-            <p>
-              <em>The Box Model</em>
-            </p>
-            <p>
+          </p>
+          <br>
+          <p>
+            <em>The Box Model</em>
+          </p>
+          <p>
             Within all these boxes mentioned above, you can find a model that conveys 
             the content of the box and how it is laid out - The Box Model. This diagram 
             shows the Box Model in all its glory:
+          </p>
+          <img id="boxmodel" src="../images/box.png" alt="Box Model Diagram">
+        
+          <div class="box-copy">
+            <p>
+            The Box Model is basically a box that wraps around every single HTML 
+            element, and is made up of:
+            </p>  
+            <ul>
+              <li>content</li>
+              <li>padding</li>
+              <li>border</li>
+              <li>margin</li>
+            </ul>
+            <p>
+            All these can be given values to dictate how the box will look.
             </p>
-            <img id="boxmodel" src="../images/box.png" alt="Box Model Diagram">
-          
-            <div class="box-copy">
-              <p>
-              The Box Model is basically a box that wraps around every single HTML 
-              element, and is made up of:
-              </p>  
-              <ul>
-                <li>content</li>
-                <li>padding</li>
-                <li>border</li>
-                <li>margin</li>
-              </ul>
-              <p>
-              All these can be given values to dictate how the box will look.
-              </p>
-            </div>
-
           </div>
         </div>
       </div>
-
-      <div class="footer">
-        <p>© Copyright Bronwyn Cotter 2018</p>
-      </div>
-
     </div>
 
-  </body>
+    <div class="footer">
+      <p>© Copyright Bronwyn Cotter 2018</p>
+    </div>
+
+  </div>
+
+</body>
 </html>

@@ -40,6 +40,10 @@ body {
     overflow: hidden;
 }
 
+.navcontent {
+    margin-left: 32px;
+}
+
 /* nav links */
 .nav a {
     float: left;
@@ -49,6 +53,7 @@ body {
     font-size: 18px;
     font-weight: 500;
     text-decoration: none;
+   
 }
 /* The dropdown container */
 .dropdown {
@@ -142,12 +147,22 @@ body {
 .main {
     width: 1220px;
     text-align: center;
-    margin: auto;
+    margin: 50px;
+}
+
+.main a {
+    text-decoration: none; 
+    color:#101435;
+}
+
+.main a:hover, a:active, a:focus, a:visted { 
+    text-decoration: none; 
+    color:#101435; 
 }
 
 #main-title {
     font-size: 30px;
-    text-align: left;
+    text-align: center;
 }
 
 .blogpics {
@@ -173,7 +188,7 @@ h4 {
     text-decoration: none;
 }
 
-/* Blogs pages */
+/* Blog pages */
 
 .blogmain {
     margin-top: 0px;
@@ -197,6 +212,11 @@ h4 {
 
 #blogmain-HCD2 {
     background: url(../images/html2.jpg) no-repeat right top;
+    background-size: contain;
+}
+
+#blogmain-EI {
+    background: url(../images/stones.jpg) no-repeat right top;
     background-size: contain;
 }
 
@@ -253,6 +273,10 @@ ul {
     width: 100%;
     margin-top: 10px;
     margin-bottom: 30px;
+}
+
+#mindful {
+    width: 60%;
 }
 
 code {
