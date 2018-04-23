@@ -9,7 +9,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 * {
     box-sizing: border-box;
-    border: 1px solid red;
+    border: 0.5px solid red;
 }
 
 
@@ -116,6 +116,30 @@ h2 {
     letter-spacing: 0.03rem;
 }
 
+/* BLOGS */
+
+#blog-head {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    line-height: 1.4rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+    letter-spacing: 0.03rem;
+    padding-top: 4rem;
+    margin-bottom: 0;
+}
+
+.fa-angle-double-down {
+    font-family: 'FontAwesome';
+    content: "\f103";
+    color: black;
+    font-size: 2rem;
+    font-style: normal;
+}
+
 h4 {
     font-size: 2rem;
     margin-bottom: 0;
@@ -136,34 +160,43 @@ p {
     margin: 1rem 0 1rem 0;
 }
 
-/* BLOGS */
-
 #blogs img {
     width: 100%;
     max-height: auto;
     overflow: hidden;
-    margin: 0;
+    margin-top: 0;
     position: relative;
 }
 
-/*
 #blogs {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-  
-/* Create four equal columns that sits next to each other
-.column {
-    flex: 33.33%;
-    max-width: 33.33%;
-    padding: 0 4px;
+    margin-top: 0;
+    margin-bottom: 3rem;
 }
-  
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
+
+/* FOOTER */
+
+#footer {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid black;
+    overflow: auto;
 }
+
+#contact {
+    margin-bottom: 2rem;
+}
+
+#social img {
+    padding: 1rem;
+    width: 5rem;
+    height: 5rem;
+}
+
+
+
+
+
+/* MEDIA QUERIES */
 
 /* Larger than mobile */
 @media only screen and (min-width: 400px) {
@@ -200,6 +233,36 @@ p {
     h2 {
         font-size: 3rem;
     }
+
+    #blogs {
+        float: left;
+        width: 100%;
+        overflow: auto;
+    }
+
+    #blog-posts1, #blog-posts2 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #blogs img {
+        padding: 1rem;
+    }
+
+    #footer {
+        display: flex;
+    }
+
+    #contact {
+        text-align: left;
+    }
+
+    #social {
+        float: right;
+        clear: right;
+        margin-top: 2rem;
+    }
+
 }
 
 /* Larger than desktop */
