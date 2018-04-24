@@ -60,25 +60,23 @@ header {
     z-index: 1000;
 }
 
-#nav-icon {
+button {
+    float: right;
+    border: none;
+}
+
+.dropdown {
     float: right;
 }
 
-nav {
-    width: 40%;
-    height: 7rem;
-    float: right;
-}
-
-nav ul {
+.dropdown-menu {
     display: none;
     list-style: none;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-nav ul, nav:active ul { 
-    display: none;
+.dropdown-menu, .dropdown-menu:active { 
     position: absolute;
     padding: 1rem;
     background: #fff;
@@ -88,7 +86,7 @@ nav ul, nav:active ul {
     width: 40%;
 }
 
-nav li {
+.dropdown-menu li {
     font-size: 1.4rem;
     text-align: center;
     width: 100%;
@@ -96,7 +94,7 @@ nav li {
     margin: 0;
 }
 
-nav:hover ul {
+.dropdown-menu:hover ul {
     display: block;
 }
 
@@ -243,11 +241,12 @@ footer {
         padding: 1rem;                       
     }
 
-    #nav-icon {
+    button {
         display: none;
+        position: relative;
     }
 
-    nav ul { 
+    .dropdown-menu { 
         display: flex;
         padding: 2.2rem 1.5rem 1rem 1.5rem;
         border: none;
@@ -256,7 +255,7 @@ footer {
         margin-bottom: 0;
     }
 
-    nav li {
+    .dropdown-menu li {
         text-align: left;
         padding: 1rem 2rem 0.3rem 0;
         font-weight: bold;
@@ -264,7 +263,7 @@ footer {
         color: black;
     }
 
-    nav:hover ul {
+    .button:hover .dropdown-menu {
         display: flex;
     }
 
