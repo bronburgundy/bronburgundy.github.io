@@ -28,6 +28,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: black;
+}
+
 /* HEADER */
 
 header {
@@ -49,7 +53,6 @@ header {
 
 #left-head img {
     width: 15rem;
-    max-width: 20rem;
 }
 
 #right-head {
@@ -57,7 +60,7 @@ header {
     height: 9rem;
     float: right;
     padding: 2rem;
-    z-index: 1000;
+    z-index: 100;
 }
 
 button {
@@ -70,7 +73,7 @@ button {
 }
 
 .dropdown-menu {
-    display: none;
+    display: hidden;
     list-style: none;
     text-transform: uppercase;
     font-weight: bold;
@@ -78,11 +81,11 @@ button {
 
 .dropdown-menu, .dropdown-menu:active { 
     position: absolute;
-    padding: 1rem;
+    padding: 0;
     background: #fff;
     border: 0.2rem solid black;
-    right: 20px;
-    top: 60px;
+    right: 2.5rem;
+    top: 6.5rem;
     width: 40%;
 }
 
@@ -90,7 +93,7 @@ button {
     font-size: 1.4rem;
     text-align: center;
     width: 100%;
-    padding: 2rem 0;
+    padding: 1rem 0;
     margin: 0;
 }
 
@@ -102,11 +105,11 @@ button {
     color: rgb(4, 4, 44)
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
-/* MAIN */
+/* INDEX MAIN */
 
 #main {
     width: 100%;
@@ -133,7 +136,7 @@ h2 {
     letter-spacing: 0.03rem;
 }
 
-/* BLOGS */
+/* INDEX BLOGS */
 
 #blog-head {
     width: 100%;
@@ -167,14 +170,15 @@ h5 {
     margin: 1rem 0 0.5rem 0;
 }
 
-h4, h5, p {
+#blogs h4, #blogs h5 {
     padding: 0 1rem 0 1rem;
 
 }
 
-p {
+#blogs p {
     font-size: 1.3rem;
     margin: 1rem 0 1rem 0;
+    padding: 0 1rem 0 1rem;
 }
 
 #blogs img {
@@ -188,6 +192,71 @@ p {
 #blogs {
     margin-top: 0;
     margin-bottom: 4rem;
+}
+
+/* BLOG MAIN */
+
+#blog-main {
+    width: 100%;
+    height: 25rem;
+    margin-top: 8rem;
+    background: url("../images/tree.jpg") no-repeat center top;
+}
+
+#blog-title {
+    width: 70%;
+    height: 15rem;
+    margin: auto;
+    position: relative;
+    top: 10rem;
+}
+
+#blog-main h5, #blog-main h6 {
+    text-align: left;
+    color: white;
+}
+
+#blog-main h5 {
+    position: absolute;
+    bottom: 10rem;
+    font-size: 1.7rem;
+}
+
+#blog-main h6 {
+    position: absolute;
+    bottom: 0;
+    font-size: 3rem;
+    line-height: 4.5rem;
+    margin-bottom: 1rem;
+}
+
+/* BLOG CONTENT */
+
+.blog-content {
+    width: 70%;
+    margin: auto;
+    margin-top: 3rem;
+    padding: 0;
+}
+
+.content {
+    margin-bottom: 5rem;
+}
+
+#eda-logo {
+    float: right;
+}
+
+.blog-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#box-image {
+    width: 100%;
+    margin-bottom: 2rem;
 }
 
 /* FOOTER */
@@ -204,15 +273,17 @@ footer {
     margin-bottom: 2rem;
 }
 
+
 #social img {
     padding: 1rem;
     width: 5rem;
-    height: 5rem;
+    height: auto;
+
 }
 
-
-
-
+footer p {
+    font-size: 1.2rem;
+}
 
 /* MEDIA QUERIES */
 
@@ -226,6 +297,17 @@ footer {
     }
 }
 
+/* Larger than phablet */
+@media only screen and (min-width: 400px) {
+
+    .container {
+        position: relative;
+        width: 100%;
+        margin: auto;
+    }
+
+}
+
 /* Larger than tablet */
 @media only screen and (min-width: 750px) {
 
@@ -233,6 +315,10 @@ footer {
         position: relative;
         width: 750px;
         margin: auto;
+    }
+
+    #left-head {
+        padding-left: 4rem;
     }
 
     #right-head {
@@ -267,7 +353,7 @@ footer {
         display: flex;
     }
 
-    li:hover {
+    header li:hover {
         border-bottom: 0.15em solid black;
     }
 
@@ -289,6 +375,14 @@ footer {
         overflow: auto;
     }
 
+    #blog-main {
+        height: 30rem;
+    }
+
+    #blog-title {
+        height: 20rem;
+    }
+
     #blog-posts1, #blog-posts2 {
         display: flex;
         flex-direction: row;
@@ -298,16 +392,29 @@ footer {
         padding: 1rem;
     }
 
+    .blog-image {
+        width: 70%;
+    }
+
+    #box-image {
+        float: right;
+        width: 50%;
+        margin-top: 3rem;
+        margin-left: 3rem;
+    }
+
     footer {
         display: flex;
     }
 
     #contact {
+        float: left;
         text-align: left;
     }
 
     #social {
         position: absolute;
+        float: right;
         right: 0;
         margin-top: 2rem;
     }
@@ -321,6 +428,14 @@ footer {
         width: 1000px;
         margin: auto;
     }
+
+    #main {
+        width: 100%;
+    }
+
+    #blog-content {
+        width: 70%;
+    }
 }
 
 /* Larger than Desktop HD */
@@ -329,6 +444,14 @@ footer {
         position: relative;
         width: 1200px;
         margin: auto;
+    }
+
+    #main {
+        width: 100%;
+    }
+
+    #blog-content {
+        width: 70%;
     }
 }
 

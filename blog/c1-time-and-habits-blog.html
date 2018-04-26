@@ -1,65 +1,102 @@
 <!DOCTYPE html>
-<html lang=en>
+<html>
   <head>
-    <title>Time and Habits</title>
+    <title>the deep end</title>
     <meta charset="UTF-8">
-    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-  
-<body>
-  <div class="container">
 
-    <div class="nav">
-      <div class="navcontent">
-        <a href="https://bronburgundy.github.io/index.html">Home</a>
-        <div class="dropdown">
-          <button class="dropbtn">Cultural Blogs</button>
-          <div class="dropdown-content">
-            <a href="https://bronburgundy.github.io/blog/c1-reflection-blog.html">Reflections</a>
-            <a class="active" href="https://bronburgundy.github.io/blog/c1-time-and-habits-blog.html">Time and Habits</a>
-            <a href="https://bronburgundy.github.io/blog/c2-emotional-intelligence-blog.html">Emotional Intelligence</a>
-          </div>
-        </div> 
-        <div class="dropdown">
-          <button class="dropbtn">Technical Blogs</button>
-          <div class="dropdown-content">
-            <a href="https://bronburgundy.github.io/blog/t2-html-css-dom-p1.html">HTML, CSS and DOM - Part 1</a>
-            <a href="https://bronburgundy.github.io/blog/t2-html-css-dom-p2.html">HTML, CSS and DOM - Part 2</a>
-          </div>
-        </div>  
-      </div> 
-    </div> 
+  <body>
+    <div class="container">
 
-    <div class="blogmain" id="blogmain-time">
-      <div class="blogblock">
-        <h5>Time and Habits</h5>
-      
-        <div class="copy">
-          <p>
-            Time Management: Not my strong suit. 
-            I am one of those perpetually late people who's friends make up meeting times of half an hour earlier just so I will be there on time. 
-            For some reason I seem to think it takes 5 minutes to get anywhere in Auckland and 15 minutes to do ANY activity... Grocery shopping, lunch, watching a movie???  
-            So of course I approached this part of the Sprint with slight apprehension. 
-          </p>
-          <p>
-            But I'm definitely keen to improve in this area, so I am addopting the Pomodoro technique, which with my current short concentration span seems to suit me quite well. 
-            Also, reviewing each task prior to starting and timeboxing how long I think it should take (in pomodoros). 
-            I've started meditating. Again. This is something I've attempted on and off several times in the past and never mnaged to make it stick. 
-            Back to the headspace app though and already managed 8 minutes today.
-          </p>
-          <p>
-            The concept of 'starting small' I found to be really interesting. I'd like to experiement with the Fogg technique to improve my punctuality.
-            Watch this space.
-          </p>
+      <header class="row">
+
+        <div class="six.columns" id="left-head">
+          <a href="https://bronburgundy.github.io.html">
+            <img src="../images/logo_opt.png" alt="main-logo">
+          </a>  
         </div>
-      </div>
+
+        <div class="six.columns" id="right-head">
+
+          <div class="dropdown">
+            <button img src="../images/menu-icon.png" alt="menu-icon">
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="current">Home</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </header>
+
+      <section class="row" id="blog-main">
+        <div class="twelve.columns" id="blog-title">
+          <h5>cultural</h5>
+          <h6>time and habits</h6>
+        </div>
+      </section>  
+
+      <article class="blog-content">
+        <div class="content" id="content-time">
+      
+          <div class="copy">
+            <p>
+              Time Management: Not my strong suit. 
+              I am one of those perpetually late people who's friends make up meeting times of half an hour earlier just so I will be there on time. 
+              For some reason I seem to think it takes 5 minutes to get anywhere in Auckland and 15 minutes to do ANY activity... Grocery shopping, lunch, even watching a movie!  
+              So of course I approached this part of the Sprint with slight apprehension. 
+            </p>
+            <img class="blog-image" src="../images/clock_opt.jpg" alt="clock">
+            <br>
+            <p>
+              In saying that, I am definitely keen to improve in this area, so I am addopting the Pomodoro technique, which with my current short concentration span seems to suit me quite well. 
+              Also, reviewing each task prior to starting and timeboxing how long I think it should take (in pomodoros). 
+              I've started meditating. Again. This is something I've attempted on and off several times in the past and never managed to make it stick. 
+              I've gone back to the old faithful Headspace app though and already managed 8 minutes today.
+            </p>
+            <p>
+              The concept of 'starting small' I found to be really interesting. I'd like to experiement with the Fogg technique to improve my punctuality.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <footer class="row">
+
+        <div class="six.columns" id="contact">
+          <p><strong>CONTACT</strong></p>
+          <p>
+            <a href="mailto:bron.cotter@icloud.com">bron.cotter@icloud.com / </a>  
+            <a href="tel:021 887 222">021 887 222</a>
+          </p>
+          <p>Copyright © 2018 Bronwyn Cotter</p>
+        </div>
+
+        <div class="six.columns" id="social">
+          <a href="https://github.com/bronburgundy">
+            <img src="../images/icon-github.png" alt="github icon">    
+          </a> 
+          <a href="https://www.linkedin.com/in/bronwyn-cotter-11206629">
+            <img src="../images/icon-link.png" alt="linkdin icon">    
+          </a>
+          <a href="https://web.facebook.com/bronwyn.cotter">
+            <img src="../images/icon-fb.png" alt="fb icon">    
+          </a>
+        </div>
+
+      </footer>
+
     </div>
 
-    <div class="footer">
-      <p>© Copyright Bronwyn Cotter 2018</p>
-    </div>
-
-  </div>
-
-</body>
+  </body>
 </html>

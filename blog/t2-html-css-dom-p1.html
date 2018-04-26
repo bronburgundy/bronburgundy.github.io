@@ -1,39 +1,53 @@
 <!DOCTYPE html>
-<html lang=en>
-<head>
-  <title>HTML, CSS and DOM - Part 1</title>
-  <meta charset="UTF-8">
-  <link href="../styles/main.css" rel="stylesheet" type="text/css">
-</head>
+<html>
+  <head>
+    <title>the deep end</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
 
-<body>
-  <div class="container">
+  <body>
+    <div class="container">
 
-    <div class="nav">
-      <div class="navcontent">
-        <a href="https://bronburgundy.github.io/index.html">Home</a>
-        <div class="dropdown">
-          <button class="dropbtn">Cultural Blogs</button>
-          <div class="dropdown-content">
-            <a href="https://bronburgundy.github.io/blog/c1-reflection-blog.html">Reflections</a>
-            <a href="https://bronburgundy.github.io/blog/c1-time-and-habits-blog.html">Time and Habits</a>
-            <a href="https://bronburgundy.github.io/blog/c2-emotional-intelligence-blog.html">Emotional Intelligence</a>
+      <header class="row">
+
+        <div class="six.columns" id="left-head">
+          <a href="https://bronburgundy.github.io.html">
+            <img src="../images/logo_opt.png" alt="main-logo">
+          </a>  
+        </div>
+
+        <div class="six.columns" id="right-head">
+
+          <div class="dropdown">
+            <button img src="../images/menu-icon.png" alt="menu-icon">
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="current">Home</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
           </div>
-        </div> 
-        <div class="dropdown">
-          <button class="dropbtn">Technical Blogs</button>
-          <div class="dropdown-content">
-            <a class="active" href="https://bronburgundy.github.io/blog/t2-html-css-dom-p1.html">HTML, CSS and DOM - Part 1</a>
-            <a href="https://bronburgundy.github.io/blog/t2-html-css-dom-p2.html">HTML, CSS and DOM - Part 2</a>
-          </div>
-        </div>  
-      </div> 
-    </div>   
 
-    <div class="blogmain" id="blogmain-HCD">
-      <div class="blogblock" id="blogblock-HCD">
-        <h5>HTML, CSS and the DOM - Part 1</h5>
-        <div class="copy">
+        </div>
+
+      </header>
+
+      <section class="row" id="blog-main">
+        <div class="twelve.columns" id="blog-title">
+          <h5>technical</h5>
+          <h6>html, css and the dom - part 1</h6>
+        </div>
+      </section>  
+
+      <article class="blog-content">
+        <div class="content" id="content-reflections">
           <p>
             <em>Analogy for HTML, CSS and the DOM</em>
           </p>
@@ -66,8 +80,8 @@
             the content of the box and how it is laid out - The Box Model. This diagram 
             shows the Box Model in all its glory:
           </p>
-          <img id="boxmodel" src="../images/box.png" alt="Box Model Diagram">
-        
+          <img id="box-image" src="../images/box.png" alt="Box Model Diagram">
+          <br>          
           <div class="box-copy">
             <p>
             The Box Model is basically a box that wraps around every single HTML 
@@ -83,13 +97,34 @@
             All these can be given values to dictate how the box will look.
             </p>
           </div>
-        </div>
-      </div>
-    </div>
+        
+      </article>
 
-    <div class="footer">
-      <p>© Copyright Bronwyn Cotter 2018</p>
-    </div>
+
+      <footer class="row">
+
+        <div class="six.columns" id="contact">
+          <p><strong>CONTACT</strong></p>
+          <p>
+            <a href="mailto:bron.cotter@icloud.com">bron.cotter@icloud.com / </a>  
+            <a href="tel:021 887 222">021 887 222</a>
+          </p>
+          <p>Copyright © 2018 Bronwyn Cotter</p>
+        </div>
+
+        <div class="six.columns" id="social">
+          <a href="https://github.com/bronburgundy">
+            <img src="../images/icon-github.png" alt="github icon">    
+          </a> 
+          <a href="https://www.linkedin.com/in/bronwyn-cotter-11206629">
+            <img src="../images/icon-link.png" alt="linkdin icon">    
+          </a>
+          <a href="https://web.facebook.com/bronwyn.cotter">
+            <img src="../images/icon-fb.png" alt="fb icon">    
+          </a>
+        </div>
+
+      </footer>
 
   </div>
 
