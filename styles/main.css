@@ -9,7 +9,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 * {
     box-sizing: border-box;
-    border: 0.5px solid transparent;
+    border: 0.5px solid red;
 }
 
 
@@ -183,6 +183,7 @@ h5 {
 
 #blogs img {
     width: 100%;
+    padding: 0 1rem 0 1rem;
     max-height: auto;
     overflow: hidden;
     margin-top: 0;
@@ -204,7 +205,7 @@ h5 {
 }
 
 #blog-title {
-    width: 70%;
+    width: 90%;
     height: 15rem;
     margin: auto;
     position: relative;
@@ -233,10 +234,13 @@ h5 {
 /* BLOG CONTENT */
 
 .blog-content {
-    width: 70%;
+    width: 90%;
     margin: auto;
     margin-top: 3rem;
     padding: 0;
+}
+.blog-content p {
+    margin: 1rem 0 1rem 0;
 }
 
 .content {
@@ -249,14 +253,30 @@ h5 {
 
 .blog-image {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    padding: 0 1rem 0 1rem;
     width: 100%;
 }
 
 #box-image {
     width: 100%;
     margin-bottom: 2rem;
+}
+
+.wireframes {
+    display: block;
+    width: 75%;
+    margin: auto;
+    padding-bottom: 1rem;
+}
+
+.blog-content ul {
+    padding: 0 1rem 0 1rem;
+}
+
+.blog-content li {
+    list-style-position: outside;
+    margin-left: 1rem;
 }
 
 /* FOOTER */
@@ -327,10 +347,6 @@ footer p {
         padding: 1rem;                       
     }
 
-    #right-head ul {
-        width: 50%;
-    }
-
     button {
         display: none;
         position: relative;
@@ -338,9 +354,10 @@ footer p {
 
     .dropdown-menu { 
         display: flex;
+        width: 45%;
         padding-top: 2rem;
         border: none;
-        right: 0;
+        right: 2rem;;
         top: 0;
         margin-bottom: 0;
     }
@@ -395,6 +412,11 @@ footer p {
         padding: 1rem;
     }
 
+    .blog-content {
+        width: 80%;
+        margin: auto;
+    }
+
     .blog-image {
         width: 70%;
     }
@@ -436,7 +458,11 @@ footer p {
         width: 100%;
     }
 
-    #blog-content {
+    #blog-title {
+        width: 70%;
+    }
+
+    .blog-content {
         width: 70%;
     }
 }
@@ -453,7 +479,11 @@ footer p {
         width: 100%;
     }
 
-    #blog-content {
+    #blog-title {
+        width: 70%;
+    }
+
+    .blog-content {
         width: 70%;
     }
 }
