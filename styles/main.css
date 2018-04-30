@@ -254,7 +254,7 @@ h5 {
 .blog-image {
     display: block;
     margin: auto;
-    padding: 0 1rem 0 1rem;
+    padding: 2rem 1rem 0 1rem;
     width: 100%;
 }
 
@@ -270,8 +270,9 @@ h5 {
     padding-bottom: 1rem;
 }
 
-.blog-content ul {
+.blog-content ol, .blog-content ul {
     padding: 0 1rem 0 1rem;
+    margin-bottom: 0;
 }
 
 .blog-content li {
@@ -401,6 +402,7 @@ footer p {
 
     #blog-title {
         height: 20rem;
+        width: 80%;
     }
 
     #blog-posts1, #blog-posts2 {
@@ -415,6 +417,7 @@ footer p {
     .blog-content {
         width: 80%;
         margin: auto;
+        margin-top: 4rem;
     }
 
     .blog-image {
