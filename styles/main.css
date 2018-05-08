@@ -378,7 +378,7 @@ footer p {
         display: flex;
     }
 
-    header li:hover {
+    nav li:hover {
         border-bottom: 0.15em solid black;
     }
 
