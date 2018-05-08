@@ -9,7 +9,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 * {
     box-sizing: border-box;
-    border: 0.5px solid transparent;
+    border: 0.5px solid red;
 }
 
 
@@ -60,26 +60,39 @@ header {
     height: 9rem;
     float: right;
     padding: 2rem;
+
+}
+nav {
+    height: 5rem;
+}
+
+#navicon {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    background: url("../images/menu-icon.png") no-repeat center center;
+    float: right;
+    border: 1px solid black;
     z-index: 100;
 }
 
-button {
-    float: right;
-    border: none;
+a:hover#navicon {
+	background-color: #444;
 }
 
-.dropdown {
-    float: right;
+nav:hover ul {
+    display: block;
 }
 
-.dropdown-menu {
-    display: hidden;
+nav ul {
+    visibility: hidden;
     list-style: none;
     text-transform: uppercase;
     font-weight: bold;
+    z-index: 200;
 }
 
-.dropdown-menu, .dropdown-menu:active { 
+nav ul, nav:active ul { 
     position: absolute;
     padding: 0;
     background: #fff;
@@ -89,7 +102,7 @@ button {
     width: 40%;
 }
 
-.dropdown-menu li {
+nav li {
     font-size: 1.2rem;
     text-align: center;
     width: 100%;
@@ -97,9 +110,7 @@ button {
     margin: 0;
 }
 
-.dropdown-menu:hover ul {
-    display: block;
-}
+
 
 .current {
     color: navy;
@@ -183,8 +194,8 @@ h5 {
 
 #blogs img {
     width: 100%;
+    height: auto;
     padding: 0 1rem 0 1rem;
-    max-height: auto;
     overflow: hidden;
     margin-top: 0;
     position: relative;
@@ -348,12 +359,12 @@ footer p {
         padding: 1rem;                       
     }
 
-    button {
+    #navicon {
         display: none;
         position: relative;
     }
 
-    .dropdown-menu { 
+    nav ul { 
         display: flex;
         width: 45%;
         padding-top: 2rem;
@@ -363,14 +374,14 @@ footer p {
         margin-bottom: 0;
     }
 
-    .dropdown-menu li {
+    nav li {
         text-align: left;
         font-weight: bold;
         margin: 1rem;
         color: black;
     }
 
-    .button:hover .dropdown-menu {
+    nav:hover .nav {
         display: flex;
     }
 
@@ -405,7 +416,7 @@ footer p {
         width: 80%;
     }
 
-    #blog-posts1, #blog-posts2 {
+    #blog-posts1, #blog-posts2, #blog-posts3 {
         display: flex;
         flex-direction: row;
     }
@@ -435,6 +446,16 @@ footer p {
         width: 24%;
         display: inline-block;
         margin-top: 2rem;
+    }
+
+    .para_list {
+        display: inline-block;
+        width: 49%;
+        vertical-align: top;
+    }
+
+    .para_list li {
+        margin-left: 1rem;
     }
 
     footer {

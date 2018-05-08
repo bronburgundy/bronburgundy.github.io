@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>the deep end</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <div class="container">
+
+      <header class="row">
+
+        <div class="six.columns" id="left-head">
+          <a href="https://bronburgundy.github.io/">
+            <img src="../images/logo_opt.png" alt="main-logo">
+          </a>  
+        </div>
+
+        <div class="six.columns" id="right-head">
+
+          <div class="dropdown">
+            <button img src="../images/menu-icon.png" alt="menu-icon">
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="https://bronburgundy.github.io/">Home</a></li>
+              <li><a href="https://bronburgundy.github.io/blog/c3-meditation-process.html">latest blog</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </header>
+
+      <section class="row" id="blog-main">
+        <div class="twelve.columns" id="blog-title">
+          <h5>technical</h5>
+          <h6>javascript basics</h6>
+        </div>
+      </section>  
+
+      <article class="blog-content">
+        <div class="content">
+          <p>
+            <em>JavaScript in comparison to HTML and CSS</em>
+          </p>
+          <p> 
+            From a functionality point of view, JavaScript allows us to make static web pages 
+            much more interactive, with elements that respond to actions to produce a desired 
+            result, such as animated graphics, pop-ups, timed content updates etc. From an 
+            implementation point of view, so far JavaScript is a lot more complex and harder 
+            to get your head around than HTML or CSS as there are so many different componenets, 
+            all with particular syntax.
+          </p>
+          <br>
+          <p>
+            <em>Control flow and loops</em>
+          </p>
+          <p>
+            Control flow is the order in which a computer executes statements in a script, which 
+            in basic script would run from the first line through to the last line of code. Loops 
+            interrupt this flow by introducing conditions which have to be met for the flow to continue.
+            This process could be applied to a real-life situation such as 'brushing your teeth':  
+          </p>
+
+          <div class="row">
+            <div class="para_list">
+              <p>
+                <strong>Basic script:</strong>
+                <ol>
+                  <li>Pick up toothbrush</li>
+                  <li>Apply toothpaste</li>
+                  <li>Brush teeth</li>
+                  <li>Rinse</li>
+                  <li>Put toothbrush down</li>
+                </ol>
+              </p>
+            </div>
+
+            <div class="para_list">
+              <p>
+                <strong>Script with Loops:</strong>
+                <ol>
+                  <li>Pick up toothbrush</li>
+                  <li>Apply toothpaste</li>
+                  <li>Brush teeth</li>
+                  <li>Rinse</li>
+                  <li>IF teeth feel dirty still</li>
+                  <li>Repeat brushing</li>
+                  <li>ELSE Put toothbrush down</li>
+                </ol>
+              </p>  
+            </div>
+          </div>
+
+          <img class="blog-image" src="../images/js.svg" alt="JavaScript picture">
+          <br>
+          <p>
+            <em>Accessing data from Arrays and Objects</em>
+          </p>
+          <p>
+            Arrays are used to store a bunch of numbers, or a list of objects of the same type,
+            in a single variable. To access the data from an array you refer to the index number
+            of the item you want ie. if you want the fifth number in an array you would ask for 
+            <code class="codespan">Array[4]</code> (arrays are indexed at 0).
+          </p>
+          <p>
+            To access the data from an object, which will be a property of that object, you will 
+            ask for the <code class="codespan">object[property]</code> or <code class="codespan">
+            object.property</code>.
+          </p>
+          <br>
+          <p>
+            <em>Functions</em>
+          </p>
+          <p>
+            A JavaScript function is a block of code designed to perform a particular task. A 
+            JavaScript function is executed when "something" invokes it (calls it). Functions
+            are the verbs of Javascript - they make actions happen. Without them you would just 
+            have a whole bunch of data stored and nothing happening to it.
+          </p>
+        </div>
+      </article>
+
+      <footer class="row">
+
+        <div class="six.columns" id="contact">
+          <p><strong>CONTACT</strong></p>
+          <p>
+            <a href="mailto:bron.cotter@icloud.com">bron.cotter@icloud.com / </a>  
+            <a href="tel:021 887 222">021 887 222</a>
+          </p>
+          <p>Copyright © 2018 Bronwyn Cotter</p>
+        </div>
+
+        <div class="six.columns" id="social">
+          <a href="https://github.com/bronburgundy">
+            <img src="../images/icon-github.png" alt="github icon">    
+          </a> 
+          <a href="https://www.linkedin.com/in/bronwyn-cotter-11206629">
+            <img src="../images/icon-link.png" alt="linkdin icon">    
+          </a>
+          <a href="https://web.facebook.com/bronwyn.cotter">
+            <img src="../images/icon-fb.png" alt="fb icon">    
+          </a>
+        </div>
+
+      </footer>
+
+    </div>
+
+  </body>
+</html>
