@@ -67,50 +67,44 @@ nav {
 }
 
 #navicon {
-    display: inline-block;
     width: 5rem;
     height: 5rem;
     background: url("../images/menu-icon.png") no-repeat center center;
     float: right;
-    border: 1px solid black;
     z-index: 100;
 }
 
 a:hover#navicon {
-	background-color: #444;
+	background-color: grey;
 }
 
 nav:hover ul {
     display: block;
-}
-
-nav ul {
-    visibility: hidden;
-    list-style: none;
-    text-transform: uppercase;
-    font-weight: bold;
     z-index: 200;
 }
 
 nav ul, nav:active ul { 
+    display: none;
     position: absolute;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
     padding: 0;
     background: #fff;
     border: 0.2rem solid black;
     right: 2.5rem;
     top: 6.5rem;
     width: 40%;
+   
 }
 
 nav li {
     font-size: 1.2rem;
     text-align: center;
     width: 100%;
-    padding: 1rem 0;
+    padding: 2rem 0;
     margin: 0;
 }
-
-
 
 .current {
     color: navy;
@@ -367,7 +361,6 @@ footer p {
     nav ul { 
         display: flex;
         width: 45%;
-        padding-top: 2rem;
         border: none;
         right: 2rem;;
         top: 0;
@@ -381,7 +374,7 @@ footer p {
         color: black;
     }
 
-    nav:hover .nav {
+    nav:hover ul {
         display: flex;
     }
 
