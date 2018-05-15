@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Intro to JS</title>
+    <meta charset="UTF-8">  
+</head>
+  
+<body>
+  <h1>Javascript</h1>
+
+  <script>
+
+//Variables
+
+    var greeting = "hello"; //declaration + initialisation
+      alert(greeting);
+
+    var greeting2; //declaration
+    greeting2 = "hi"; //initialisation
+      alert(greeting2);
+
+    var time = 5;
+    var speed = 10;
+    alert(time * speed);
+
+//Functions
+
+    function myDistance() { //function and name
+      var speed = 10;
+      var time = 5;
+
+      alert(speed * time);
+    }
+    myDistance(); //Call function
+
+//Now simplify
+
+     function myDistance(speed, time) { //function and name, plus arguments
+
+      alert(speed * time);
+    }
+    myDistance(10, 5); //Call function, add arguments
+    myDistance(20, 2); //Call function with different values
+
+//Create function that returns data
+
+    function myDistance(speed, time) { // Add parameters 'speed' and 'time'
+
+      return speed * time; //returns a value to be stored. Also exits function so any code after the return will not get reached.
+    }
+    var distance = myDistance(10, 5); // Call function by initialising it to another var, pass values to function
+    alert(distance); //Create alert showing above var
+
+//If/Else statements
+
+    var temp = 25;
+    var rain = false;
+
+    if((temp > 20) && (rain == false)) {
+      console.log("It's hot and dry today");
+    } else {
+      console.log("It's cold and wet today");
+    }
+ 
+  </script>  
+  
+</body>
+
+</html>

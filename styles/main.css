@@ -409,7 +409,7 @@ footer p {
         width: 80%;
     }
 
-    #blog-posts1, #blog-posts2, #blog-posts3 {
+    #blog-posts1, #blog-posts2, #blog-posts3, #blog-posts4 {
         display: flex;
         flex-direction: row;
     }
