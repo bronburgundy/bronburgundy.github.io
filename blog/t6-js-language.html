@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>the deep end</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <div class="container">
+
+      <header class="row">
+
+        <div class="six.columns" id="left-head">
+          <a href="https://bronburgundy.github.io/">
+            <img src="../images/logo_opt.png" alt="main-logo">
+          </a>  
+        </div>
+
+        <div class="six.columns" id="right-head">
+
+          <nav>
+            <a href="#" id="navicon"></a>
+            <ul>
+              <li><a href="https://bronburgundy.github.io/" class="current">Home</a></li>
+              <li><a href="https://bronburgundy.github.io/blog/c4-daily-mindfulness.html">latest blog</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </nav>
+
+        </div>
+
+      </header>
+
+      <section class="row" id="blog-main">
+        <div class="twelve.columns" id="blog-title">
+          <h5>technical</h5>
+          <h6>JavaScript Language</h6>
+        </div>
+      </section>  
+
+      <article class="blog-content">
+        <div class="content">
+          <p>
+            <em>Parentheses ()</em>
+          </p>
+          <p> 
+            Parentheses, or the grouping operator, are used to: 
+            <ul>
+              <li>Pass informtaion into a function 
+                <br>eg. <code>function dostuff (par1, par2)</code> or <code>function dostuff ()</code></li>
+              <li>Surround conditional statements like if and else/if
+                <br>eg. <code>if (x < 10)</code></li>
+              <li>Surround the statements in a loop
+                  <br>eg. <code> for (x = 0; x < array.length; x++)</code></li>
+              <li>Group to enforce order of operations
+              <br>eg. <code>a = (4 + 3) * 2;</code></li>
+            </ul>
+          </p> 
+          <p>
+            <em>Brackets []</em>
+          </p>
+          <p>
+            Square brackets are typically used for defining and accessing the elements of an array or 
+            to access properties of objects (instead of dot notation).
+            <br>eg. <code>var myDog = ["staffy", 5, "tan"]</code> shows the elements in the array myDog
+            <br><code>myDog[3]</code> fetches the fourth element in the array myDog
+            <br><br><code>var property_name = 'name';</code>
+                <br><code>console.log(myObject[property_name])</code> logs 'Gabe'
+          </p>
+          <br>
+          <p>
+            <em>Braces {}</em>
+          </p>
+          <p>
+            Curly Braces {} are used during the declaration of objects, or to enclose blocks of code 
+            (functions, conditionals, loops, classes etc).
+            <br>eg. 
+            <br><code>function addOne (n) { </code>
+            <br><code>return n + 1</code>
+            <br><code>}</code>
+          </p>
+          <br>
+          <p>
+            <em>Single quotes ' ' and Double quotes " "</em>
+          </p>
+          <p>
+            Both single quotes and double quotes can be used to define a string, which is a series 
+            of characters eg. "car" or "Bronwyn Cotter". Using one over the other is more just a 
+            preference and can depend on what is easier to read in your code, and suits the string, 
+            especially for words that already have a apostrophe (') or need actual quote marks to be 
+            shown around certain text.
+            <br>eg.
+            <br><code>alert("It's game time");</code> Double works here due to the apostrphe in It's
+            <br><br><code>alert('It\'s "game" time');</code>Single works here due to game being in quotation marks. 
+            A backslash is also needed to show the apostrophe is not the end of the single quotation marks.
+            <br>
+            </p>  
+          <img class="blog-image" src="../images/js.png" alt="JS example">
+        </div>
+      </article>
+
+      <footer class="row">
+
+        <div class="six.columns" id="contact">
+          <p><strong>CONTACT</strong></p>
+          <p>
+            <a href="mailto:bron.cotter@icloud.com">bron.cotter@icloud.com / </a>  
+            <a href="tel:021 887 222">021 887 222</a>
+          </p>
+          <p>Copyright © 2018 Bronwyn Cotter</p>
+        </div>
+
+        <div class="six.columns" id="social">
+          <a href="https://github.com/bronburgundy">
+            <img src="../images/icon-github.png" alt="github icon">    
+          </a> 
+          <a href="https://www.linkedin.com/in/bronwyn-cotter-11206629">
+            <img src="../images/icon-link.png" alt="linkdin icon">    
+          </a>
+          <a href="https://web.facebook.com/bronwyn.cotter">
+            <img src="../images/icon-fb.png" alt="fb icon">    
+          </a>
+        </div>
+
+      </footer>
+
+    </div>
+
+  </body>
+</html>
